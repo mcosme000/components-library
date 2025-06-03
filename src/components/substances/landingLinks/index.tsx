@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { Button } from "@/components/atoms/button";
+import { AtomsButton } from "@/components/atoms/button";
 
 export const SubstancesLandingLinks = () => {
   const items = {
@@ -29,13 +29,13 @@ export const SubstancesLandingLinks = () => {
     <div className="grid grid-cols-6 gap-4">
       {Object.entries(items).map(([key, value]) => {
         return (
-          <Button
+          <AtomsButton
             key={key}
             variant="link"
             onClick={() => router.push(value.href)}
           >
             {value.title}
-          </Button>
+          </AtomsButton>
         );
       })}
     </div>
