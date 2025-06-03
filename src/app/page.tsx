@@ -1,4 +1,4 @@
-import { SubstancesLandingLinks } from "./components/substances/landingLinks";
+import { SubstancesLandingLinks } from "@/components/substances/landingLinks";
 
 export default function Home() {
   return (
