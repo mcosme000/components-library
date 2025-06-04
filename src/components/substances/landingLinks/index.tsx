@@ -17,6 +17,10 @@ export const SubstancesLandingLinks = () => {
       title: "Cards",
       href: "/cards",
     },
+    dropwdowns: {
+      title: "Dropdowns",
+      href: "/dropdowns",
+    },
     tables: {
       title: "Tables",
       href: "/tables",
