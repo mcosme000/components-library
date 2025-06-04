@@ -4,7 +4,7 @@ import { SubstancesDropdownHeader } from "@/components/substances/dropdown/heade
 export default function DropdownsPage() {
   return (
     <main>
-      <MoleculesHeader title="Buttons" backIcon />
+      <MoleculesHeader title="Dropdowns" backIcon />
       <div className="flex items-center justify-items-center min-h-screen gap-4">
         <SubstancesDropdownHeader />
       </div>
