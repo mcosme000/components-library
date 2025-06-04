@@ -50,12 +50,18 @@ export const MoleculesReactTable = () => {
 
   return (
     <div>
-      <table className="w-full max-w-7xl mx-auto" {...getTableProps()}>
+      <table
+        className="w-full mx-auto bg-slate-50 border border-slate-200 border-collapse rounded-lg"
+        {...getTableProps()}
+      >
         <thead>
           {headerGroups.map((headerGroup) => (
             <tr {...headerGroup.getHeaderGroupProps()}>
               {headerGroup.headers.map((column) => (
-                <th className="bg-slate-50" {...column.getHeaderProps()}>
+                <th
+                  className="text-left bg-slate-200 p-4 font-semibold border-b-2 border-slate-300"
+                  {...column.getHeaderProps()}
+                >
                   {column.render("Header")}
                 </th>
               ))}
@@ -68,7 +74,12 @@ export const MoleculesReactTable = () => {
             return (
               <tr {...row.getRowProps()}>
                 {row.cells.map((cell) => (
-                  <td {...cell.getCellProps()}>{cell.render("Cell")}</td>
+                  <td
+                    className="p-4 border-b border-slate-300"
+                    {...cell.getCellProps()}
+                  >
+                    {cell.render("Cell")}
+                  </td>
                 ))}
               </tr>
             );
